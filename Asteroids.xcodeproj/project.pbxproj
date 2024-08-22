@@ -18,6 +18,16 @@
 		CA3894692C77D967008254B9 /* AsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3894682C77D967008254B9 /* AsteroidsTests.swift */; };
 		CA3894732C77D967008254B9 /* AsteroidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3894722C77D967008254B9 /* AsteroidsUITests.swift */; };
 		CA3894752C77D967008254B9 /* AsteroidsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3894742C77D967008254B9 /* AsteroidsUITestsLaunchTests.swift */; };
+		CA3894912C77DB74008254B9 /* extraShip.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA38948B2C77DB74008254B9 /* extraShip.wav */; };
+		CA3894922C77DB74008254B9 /* beat2.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA38948C2C77DB74008254B9 /* beat2.wav */; };
+		CA3894932C77DB74008254B9 /* bangMedium.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA38948D2C77DB74008254B9 /* bangMedium.wav */; };
+		CA3894942C77DB74008254B9 /* beat1.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA38948E2C77DB74008254B9 /* beat1.wav */; };
+		CA3894952C77DB74008254B9 /* bangSmall.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA38948F2C77DB74008254B9 /* bangSmall.wav */; };
+		CA3894962C77DB74008254B9 /* bangLarge.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA3894902C77DB74008254B9 /* bangLarge.wav */; };
+		CA3894992C77DE54008254B9 /* OpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA3894982C77DE54008254B9 /* OpeningScene.sks */; };
+		CA38949B2C77DEFA008254B9 /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949A2C77DEFA008254B9 /* OpeningScene.swift */; };
+		CA38949D2C77DFA5008254B9 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949C2C77DFA5008254B9 /* Asteroid.swift */; };
+		CA38949F2C77DFC7008254B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949E2C77DFC7008254B9 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +62,19 @@
 		CA38946E2C77D967008254B9 /* AsteroidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA3894722C77D967008254B9 /* AsteroidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsUITests.swift; sourceTree = "<group>"; };
 		CA3894742C77D967008254B9 /* AsteroidsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA3894812C77D9A9008254B9 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		CA3894822C77DA3B008254B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA38948B2C77DB74008254B9 /* extraShip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = extraShip.wav; sourceTree = "<group>"; };
+		CA38948C2C77DB74008254B9 /* beat2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat2.wav; sourceTree = "<group>"; };
+		CA38948D2C77DB74008254B9 /* bangMedium.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bangMedium.wav; sourceTree = "<group>"; };
+		CA38948E2C77DB74008254B9 /* beat1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beat1.wav; sourceTree = "<group>"; };
+		CA38948F2C77DB74008254B9 /* bangSmall.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bangSmall.wav; sourceTree = "<group>"; };
+		CA3894902C77DB74008254B9 /* bangLarge.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bangLarge.wav; sourceTree = "<group>"; };
+		CA3894972C77DD32008254B9 /* Skia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Skia.ttf; sourceTree = "<group>"; };
+		CA3894982C77DE54008254B9 /* OpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OpeningScene.sks; sourceTree = "<group>"; };
+		CA38949A2C77DEFA008254B9 /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
+		CA38949C2C77DFA5008254B9 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		CA38949E2C77DFC7008254B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +105,7 @@
 		CA3894422C77D966008254B9 = {
 			isa = PBXGroup;
 			children = (
+				CA3894812C77D9A9008254B9 /* ReadMe.md */,
 				CA38944D2C77D966008254B9 /* Asteroids */,
 				CA3894672C77D967008254B9 /* AsteroidsTests */,
 				CA3894712C77D967008254B9 /* AsteroidsUITests */,
@@ -102,14 +126,14 @@
 		CA38944D2C77D966008254B9 /* Asteroids */ = {
 			isa = PBXGroup;
 			children = (
-				CA38944E2C77D966008254B9 /* AppDelegate.swift */,
-				CA3894502C77D966008254B9 /* GameScene.sks */,
-				CA3894522C77D966008254B9 /* Actions.sks */,
-				CA3894542C77D966008254B9 /* GameScene.swift */,
+				CA38949E2C77DFC7008254B9 /* Constants.swift */,
+				CA3894822C77DA3B008254B9 /* Info.plist */,
 				CA3894562C77D966008254B9 /* GameViewController.swift */,
+				CA38944E2C77D966008254B9 /* AppDelegate.swift */,
+				CA3894882C77DABA008254B9 /* Scenes */,
+				CA3894832C77DA75008254B9 /* Resources */,
 				CA3894582C77D966008254B9 /* Main.storyboard */,
-				CA38945B2C77D967008254B9 /* Assets.xcassets */,
-				CA38945D2C77D967008254B9 /* LaunchScreen.storyboard */,
+				CA38949A2C77DEFA008254B9 /* OpeningScene.swift */,
 			);
 			path = Asteroids;
 			sourceTree = "<group>";
@@ -129,6 +153,82 @@
 				CA3894742C77D967008254B9 /* AsteroidsUITestsLaunchTests.swift */,
 			);
 			path = AsteroidsUITests;
+			sourceTree = "<group>";
+		};
+		CA3894832C77DA75008254B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA3894862C77DA8D008254B9 /* Graphics */,
+				CA3894852C77DA86008254B9 /* Sounds */,
+				CA3894842C77DA7D008254B9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA3894842C77DA7D008254B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CA3894972C77DD32008254B9 /* Skia.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CA3894852C77DA86008254B9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				CA3894902C77DB74008254B9 /* bangLarge.wav */,
+				CA38948D2C77DB74008254B9 /* bangMedium.wav */,
+				CA38948F2C77DB74008254B9 /* bangSmall.wav */,
+				CA38948E2C77DB74008254B9 /* beat1.wav */,
+				CA38948C2C77DB74008254B9 /* beat2.wav */,
+				CA38948B2C77DB74008254B9 /* extraShip.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		CA3894862C77DA8D008254B9 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				CA38945B2C77D967008254B9 /* Assets.xcassets */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		CA3894872C77DAA4008254B9 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				CA3894502C77D966008254B9 /* GameScene.sks */,
+				CA3894522C77D966008254B9 /* Actions.sks */,
+				CA3894542C77D966008254B9 /* GameScene.swift */,
+				CA38949C2C77DFA5008254B9 /* Asteroid.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		CA3894882C77DABA008254B9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CA38948A2C77DAC7008254B9 /* LaunchScene */,
+				CA3894892C77DAC0008254B9 /* OpeningScene */,
+				CA3894872C77DAA4008254B9 /* GameScene */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CA3894892C77DAC0008254B9 /* OpeningScene */ = {
+			isa = PBXGroup;
+			children = (
+				CA3894982C77DE54008254B9 /* OpeningScene.sks */,
+			);
+			path = OpeningScene;
+			sourceTree = "<group>";
+		};
+		CA38948A2C77DAC7008254B9 /* LaunchScene */ = {
+			isa = PBXGroup;
+			children = (
+				CA38945D2C77D967008254B9 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +335,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA3894942C77DB74008254B9 /* beat1.wav in Resources */,
+				CA3894922C77DB74008254B9 /* beat2.wav in Resources */,
+				CA3894952C77DB74008254B9 /* bangSmall.wav in Resources */,
 				CA3894512C77D966008254B9 /* GameScene.sks in Resources */,
+				CA3894962C77DB74008254B9 /* bangLarge.wav in Resources */,
 				CA38945A2C77D966008254B9 /* Base in Resources */,
+				CA3894932C77DB74008254B9 /* bangMedium.wav in Resources */,
 				CA38945C2C77D967008254B9 /* Assets.xcassets in Resources */,
 				CA3894532C77D966008254B9 /* Actions.sks in Resources */,
 				CA38945F2C77D967008254B9 /* Base in Resources */,
+				CA3894992C77DE54008254B9 /* OpeningScene.sks in Resources */,
+				CA3894912C77DB74008254B9 /* extraShip.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +374,9 @@
 				CA3894552C77D966008254B9 /* GameScene.swift in Sources */,
 				CA3894572C77D966008254B9 /* GameViewController.swift in Sources */,
 				CA38944F2C77D966008254B9 /* AppDelegate.swift in Sources */,
+				CA38949B2C77DEFA008254B9 /* OpeningScene.swift in Sources */,
+				CA38949D2C77DFA5008254B9 /* Asteroid.swift in Sources */,
+				CA38949F2C77DFC7008254B9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,12 +560,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83Z22V6XMU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asteroids/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,12 +590,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 83Z22V6XMU;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asteroids/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
