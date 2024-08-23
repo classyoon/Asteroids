@@ -28,6 +28,7 @@
 		CA38949B2C77DEFA008254B9 /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949A2C77DEFA008254B9 /* OpeningScene.swift */; };
 		CA38949D2C77DFA5008254B9 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949C2C77DFA5008254B9 /* Asteroid.swift */; };
 		CA38949F2C77DFC7008254B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38949E2C77DFC7008254B9 /* Constants.swift */; };
+		CA3894A12C77EDA6008254B9 /* thrust.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA3894A02C77EDA6008254B9 /* thrust.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CA38949A2C77DEFA008254B9 /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
 		CA38949C2C77DFA5008254B9 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
 		CA38949E2C77DFC7008254B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CA3894A02C77EDA6008254B9 /* thrust.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = thrust.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				CA3894902C77DB74008254B9 /* bangLarge.wav */,
 				CA38948D2C77DB74008254B9 /* bangMedium.wav */,
+				CA3894A02C77EDA6008254B9 /* thrust.wav */,
 				CA38948F2C77DB74008254B9 /* bangSmall.wav */,
 				CA38948E2C77DB74008254B9 /* beat1.wav */,
 				CA38948C2C77DB74008254B9 /* beat2.wav */,
@@ -339,6 +342,7 @@
 				CA3894922C77DB74008254B9 /* beat2.wav in Resources */,
 				CA3894952C77DB74008254B9 /* bangSmall.wav in Resources */,
 				CA3894512C77D966008254B9 /* GameScene.sks in Resources */,
+				CA3894A12C77EDA6008254B9 /* thrust.wav in Resources */,
 				CA3894962C77DB74008254B9 /* bangLarge.wav in Resources */,
 				CA38945A2C77D966008254B9 /* Base in Resources */,
 				CA3894932C77DB74008254B9 /* bangMedium.wav in Resources */,
