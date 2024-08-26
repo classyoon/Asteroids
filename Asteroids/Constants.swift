@@ -15,4 +15,7 @@ func rad2deg(radians: Double) -> Double {
     radians * 180 / .pi
     
 }
-
+func findDestination(start: CGPoint, distance: CGFloat = 1152, angle : CGFloat)-> CGPoint {
+    var x : Double = 0
+    var y : Double = 0
+}
