@@ -23,6 +23,7 @@ class GameScene: SKScene {
     var isRotatingRight = false
     var isThrustOn = false
     var isBacking = false
+    var isHyperSpacing = false
     
     //Controls
     var rotation : CGFloat = 0 {
@@ -92,6 +93,9 @@ class GameScene: SKScene {
         case "Back" :
             isBacking = true
             scene?.run(thrustSound, withKey: "thrustSound")
+            
+        case "Hyper" :
+            animateHyperSpace()
         default :
             return
         }
@@ -147,5 +151,21 @@ class GameScene: SKScene {
         player.physicsBody?.allowsRotation = false // prevents from being turned by objects
         
         isPlayerAlive = true
+    }
+    func animateHyperSpace(){
+        let outAnimation : SKAction = SKAction(named: "outAnimation")!
+        let inAnimation : SKAction = SKAction(named: "inAnimation")!
+        let randomX : CGFloat = CGFloat.random(in: 100...1948)
+        let randomY : CGFloat = CGFloat.random(in: 150...1436)
+        let stopShooting = SKAction.run {
+            self.isHyperSpacing = true
+        }
+        let startShooting = SKAction.run {
+            self.isHyperSpacing = false
+        }
+        let movePlayer = SKAction.move(to: CGPoint(x: randomX, y: randomY), duration: 0)
+        let wait = SKAction.wait(forDuration: 0.25)
+        let animation = SKAction.sequence([stopShooting, outAnimation, wait, movePlayer, wait, inAnimation, startShooting])
+        player.run(animation)
     }
 }
