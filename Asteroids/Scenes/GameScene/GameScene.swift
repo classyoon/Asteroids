@@ -25,6 +25,12 @@ class GameScene: SKScene {
     var isBacking = false
     var isHyperSpacing = false
     
+    
+//    let enemy = SKSpriteNode(imageNamed: "alien-ship")
+//    var isEnemyAlive = false
+//    var isEnemyBig = true
+//    var enemyTimer : Double = 0
+    
     //Controls
     var rotation : CGFloat = 0 {
         didSet{//changes when update
@@ -43,6 +49,8 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         setupLabelsAndButtons()
         createPlayeer(atX: frame.width/2, atY:frame.height/2 )
+        
+      //  enemyTimer = Double.random(in: 1800...7200)//should be 30-120 seconds
     }
     
     override func update(_ currentTime: TimeInterval) {
@@ -71,8 +79,15 @@ class GameScene: SKScene {
         if player.position.y < 0 { player.position.y = frame.height}
         if player.position.x < 0 { player.position.x = frame.width}
         if player.position.x > frame.width { player.position.x = 0}
+        
+ 
+         
+//                createEnemySpaceShip()
+          
+        
     }
     
+   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {return}
         let location = touch.location(in: self)//Finds location of tap
@@ -96,6 +111,9 @@ class GameScene: SKScene {
             
         case "Hyper" :
             animateHyperSpace()
+        case "Fire":
+            createPlayerBullet()
+          //  createEnemySpaceShip()
         default :
             return
         }
@@ -168,4 +186,53 @@ class GameScene: SKScene {
         let animation = SKAction.sequence([stopShooting, outAnimation, wait, movePlayer, wait, inAnimation, startShooting])
         player.run(animation)
     }
+    
+    func createPlayerBullet(){
+        guard isHyperSpacing == false && isPlayerAlive == true else { return}
+        let bullet = SKShapeNode(ellipseOf: CGSize(width: 10, height: 10))
+        let shotSound = SKAction.playSoundFileNamed("fire.wav", waitForCompletion: false)
+        let move = SKAction.move(to: findDestination(start: player.position, angle: rotation), duration: 0.5)
+        let sequence = SKAction.sequence([shotSound, move, .removeFromParent()])
+        
+        bullet.position = player.position
+        
+        bullet.zPosition = 0
+        bullet.fillColor = .white
+        bullet.name = "playerBullet"
+        addChild(bullet)
+        bullet.physicsBody = SKPhysicsBody(circleOfRadius: 3, center: player.position)
+        bullet.physicsBody?.affectedByGravity = false
+        bullet.physicsBody?.isDynamic = true
+        bullet.run(sequence)
+    }
+//    func createEnemySpaceShip() {
+//        guard isEnemyAlive == false else {return}
+//        isEnemyAlive = true
+//        let startOnLeft = Bool.random()
+//        let startY = Double.random(in: 150...1436)
+//        
+//      //  isEnemyBig = score > 40000 ? false : Bool.random()
+//        isEnemyBig = Bool.random()
+//        enemy.position = startOnLeft ? CGPoint(x: -100, y: startY) : CGPoint(x: 2248, y: startY)
+//        enemy.zPosition = 0
+//        enemy.size = CGSize(width: isEnemyBig ? 120 : 60, height: isEnemyBig ? 120 : 60)
+//        enemy.name = isEnemyBig ? "enemy-large" : "enemy-small"
+//        addChild(enemy)
+//        enemy.physicsBody = SKPhysicsBody(texture: enemy.texture!, size: enemy.size)
+//        enemy.physicsBody?.affectedByGravity = false
+//        enemy.physicsBody?.isDynamic = true
+//        
+//        let firstMove = SKAction.move(to: startOnLeft ? CGPoint(x: 716, y: startY + Double.random(in: -500...500)) : CGPoint(x: 1432, y: Double.random(in: -500...500)), duration: 3)//zig zag move
+//        let secondMove = SKAction.move(to: startOnLeft ? CGPoint(x: 1432, y: startY + Double.random(in: -500...500)) : CGPoint(x: 716, y: Double.random(in: -500...500)), duration: 3)//zig zag move
+//        let thirdMove = SKAction.move(to: startOnLeft ? CGPoint(x: 2248, y: startY + Double.random(in: -500...500)) : CGPoint(x: -100, y: Double.random(in: -500...500)), duration: 3)//zig zag move
+//        let remove = SKAction.run {
+//            self.isEnemyAlive = false
+//            self.enemyTimer = Double.random(in: 10...15)
+//        }
+//        let sound = SKAction.repeatForever(SKAction.playSoundFileNamed("saucerSmall.wav", waitForCompletion: true))// Add saucer big
+//        let sequence = SKAction.sequence([firstMove, secondMove, thirdMove, .removeFromParent(), remove])
+//        
+//        let group = SKAction.group([sound, sequence])
+//        enemy.run(group)
+//    }
 }

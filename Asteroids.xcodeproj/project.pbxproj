@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA2915222C8B421900E608FF /* fire.wav in Resources */ = {isa = PBXBuildFile; fileRef = CA2915212C8B421800E608FF /* fire.wav */; };
 		CA38944F2C77D966008254B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA38944E2C77D966008254B9 /* AppDelegate.swift */; };
 		CA3894512C77D966008254B9 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA3894502C77D966008254B9 /* GameScene.sks */; };
 		CA3894532C77D966008254B9 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CA3894522C77D966008254B9 /* Actions.sks */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CA2915212C8B421800E608FF /* fire.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fire.wav; sourceTree = "<group>"; };
 		CA38944B2C77D966008254B9 /* Asteroids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Asteroids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA38944E2C77D966008254B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA3894502C77D966008254B9 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 		CA3894852C77DA86008254B9 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				CA2915212C8B421800E608FF /* fire.wav */,
 				CA3894902C77DB74008254B9 /* bangLarge.wav */,
 				CA38948D2C77DB74008254B9 /* bangMedium.wav */,
 				CA3894A02C77EDA6008254B9 /* thrust.wav */,
@@ -340,6 +343,7 @@
 			files = (
 				CA3894942C77DB74008254B9 /* beat1.wav in Resources */,
 				CA3894922C77DB74008254B9 /* beat2.wav in Resources */,
+				CA2915222C8B421900E608FF /* fire.wav in Resources */,
 				CA3894952C77DB74008254B9 /* bangSmall.wav in Resources */,
 				CA3894512C77D966008254B9 /* GameScene.sks in Resources */,
 				CA3894A12C77EDA6008254B9 /* thrust.wav in Resources */,
